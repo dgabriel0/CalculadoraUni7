@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Uni7" >
+
+    <EditText
+        android:id="@+id/etVp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/linha"
+        android:ems="10"
+        android:hint="VP2"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/etVp1"
+        app:layout_constraintStart_toStartOf="@+id/etVp1"
+        app:layout_constraintTop_toBottomOf="@+id/etVp1" />
+
+    <EditText
+        android:id="@+id/etVf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/linha"
+        android:ems="10"
+        android:hint="VF"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/etVp2"
+        app:layout_constraintStart_toStartOf="@+id/etVp2"
+        app:layout_constraintTop_toBottomOf="@+id/etVp2" />
+
+    <EditText
+        android:id="@+id/etVp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/linha"
+        android:ems="10"
+        android:hint="VP1"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Coloque suas notas"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="199dp"
+        android:layout_height="138dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/pageheadertitleimage_pt_br" />
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#00FFEB3B"
+        android:text="Calcular"
+        android:textColor="@color/linha"
+        app:layout_constraintEnd_toEndOf="@+id/etVf"
+        app:layout_constraintStart_toStartOf="@+id/etVf"
+        app:layout_constraintTop_toBottomOf="@+id/etVf" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/btCalcular"
+        app:layout_constraintStart_toStartOf="@+id/btCalcular"
+        app:layout_constraintTop_toBottomOf="@+id/btCalcular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
